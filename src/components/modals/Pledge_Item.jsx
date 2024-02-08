@@ -46,7 +46,6 @@ const Pledge_Item = ({ title, pledgeTitle, description }) => {
                 checked={checkSelectedItem(title)}
                 onChange={handleCheckboxChange}
                 name={title}
-                readOnly
                 aria-label={`select ${title}`}
               />
               <div className='md:flex items-center md:space-x-4'>
