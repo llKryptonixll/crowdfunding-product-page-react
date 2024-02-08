@@ -48,7 +48,7 @@ const Main_Head = ({ mainCardStyles }) => {
             </motion.header>
             <div className='flex items-center space-x-3 justify-center sm:justify-between'>
                 <motion.button {...animations.buttonLeft} onClick={openModal} className={`${mainButtonStyles} h-[55px] origin-left`}>Back this project</motion.button>
-                <motion.button {...animations.buttonRight} onClick={toggleBookmark} className='flex items-center origin-right sm:bg-dark_gray sm:bg-opacity-10 sm:w-[200px] w-auto rounded-full space-x-4'>
+                <motion.button aria-label={isBookmarked === true ? "Bookmarked" : "Bookmark"} {...animations.buttonRight} onClick={toggleBookmark} className='flex items-center origin-right sm:bg-dark_gray sm:bg-opacity-10 sm:w-[200px] w-auto rounded-full space-x-4'>
                     <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fillRule="evenodd"><circle fill={`${isBookmarked === true ? '#147b74' : "#2F2F2F"}`} cx="28" cy="28" r="28" />
                             <path fill={`${isBookmarked === true ? '#FFFFFF' : "#B1B1B1"}`} d="M23 19v18l5-5.058L33 37V19z" />
