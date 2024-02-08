@@ -1,6 +1,6 @@
 const Navbar = ({ openClose_MobileMenu, menuIsOpen }) => {
     return (
-        <header className="md:bg-[url('assets/images/image-hero-desktop.jpg')] bg-[url('assets/images/image-hero-mobile.jpg')] bg-contain bg-top bg-fixed bg-no-repeat h-[400px]">
+        <header className="md:bg-[url('/assets/images/image-hero-desktop.jpg')] bg-[url('/assets/images/image-hero-mobile.jpg')] bg-contain bg-top bg-fixed bg-no-repeat h-[400px]">
             <nav className='z-50 relative flex justify-between lg:pl-32 sm:pl-14 pl-6 lg:pr-32 sm:pr-14 pr-6 pt-10 items-center'>
                 <img src="assets/images/logo.svg" alt="company-logo" />
                 <ul className='text-white space-x-12 hidden sm:flex'>
