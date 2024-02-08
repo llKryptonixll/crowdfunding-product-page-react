@@ -47,6 +47,7 @@ const Pledge_Item = ({ title, pledgeTitle, description }) => {
                 onChange={handleCheckboxChange}
                 name={title}
                 readOnly
+                aria-label={`select ${title}`}
               />
               <div className='md:flex items-center md:space-x-4'>
                 <h3 className={`${changeStyle("text-dark_gray")} font-bold text-black text-xl`}>{title}</h3>
